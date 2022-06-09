@@ -1,0 +1,93 @@
+<!-- <div class="btn" fxLayout="row" fxLayoutAlign="start center" style="margin-left: 100px;margin-top: 30px;">
+    <button mat-button>Home</button>
+    <span>/Book(01)</span>
+</div> -->
+<!-- <span class="home" style="color:grey; cursor:pointer;" routerLink="/home">Home/  </span><span style="color: black; font-weight: 500;"> My Wishlist</span> -->
+<div class="start" fxLayout="row">
+    <span class="home" style="color:grey; cursor:pointer;" routerLink="/home">Home/  </span><span style="color: black; font-weight: 500;"> Book (1)</span>
+</div>
+<div fxLayout="row" fxLayoutAlign="center start">
+
+    <div class="sideimages" fxLayout="column" fxLayoutGap="10px"  width="50px"  height="60px">
+        <div class="side1">
+            <img class="img1" src="../../../assets/book1.jpg" >
+        </div>
+        <div class="side2">
+            <img class="img2" src="../../../assets/book.jpg">
+        </div>
+    </div>
+
+    <div class="imageandbutton" fxLayout="column">
+
+        <div class="bigimage" fxLayout="row">
+            <div class="big1">
+                <img class="image1" src="../../../assets/book1.jpg">
+            </div>
+        </div>
+
+        <div class="cartandwishlistbutton" fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="space-between center">
+            <div>
+                <button mat-raised-button class="addtobag"  style="color:aliceblue" (click)="addToBag(book)">
+                    ADD TO BAG
+                </button>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="start center">
+                <button mat-flat-button class="wishlist" style="color:aliceblue"(click)="addToWishList(book)">
+                    <mat-icon class="wishlistIcon">favorite</mat-icon>
+                    WISHLIST
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bookdetailsdiv" fxLayout="column" fxLayout.xs="column" fxFlex.xs="95">
+        <div class="entirebook" fxLayout="column" fxLayout.sm="column">
+
+            <div class="bookname">
+                {{book.bookName}}
+
+            </div>
+            <div class="author">
+                by {{book.author}}
+            </div>
+            <div class="rating" fxLayoutAlign="space-evenly center">
+                4.5<img class="Star" src="../../../assets/star_rate.svg" alt="">
+            </div>
+            <div class="quantity">
+                ({{book.quantity}} items)
+            </div>
+
+            <div class="price" fxLayout="row" fxLayoutGap="10px">
+                <div class="discountprice">
+                    Rs.{{book.discountPrice}}
+                </div>
+                <div class="originalprice">
+                    <del> Rs.{{book.price}} </del>
+                </div>
+            </div>
+
+        </div>
+        <div class="line" style="color:gray">____________________________________________________________________________________________</div>
+
+
+        <div fxLayout="column" fxLayoutAlign="start start">
+            <span class="bookdetail">Book Detail</span>
+            <p class="para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br> labore
+                et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br> nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit<br> esse cillum dolore eu fugiat nulla
+                pariatur.
+                Excepteur sint occaecat cupidatat non proident,<br> sunt in culpa qui officia deserunt mollit anim id
+                est laborum.
+            </p>
+        </div>
+
+        <div class="line" style="color:gray">____________________________________________________________________________________________</div>
+
+    </div>
+</div>
+<div>
+    <router-outlet></router-outlet>
+</div>

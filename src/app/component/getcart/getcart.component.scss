@@ -1,0 +1,120 @@
+
+.layout{
+    padding-bottom: 20px;
+    padding-left: 12%;
+    padding-right: 12%;
+    margin-top: 5px;
+  }
+  
+  mat-expansion-panel{
+    border: 1px solid lightgray;
+  }
+  
+  .example-headers-align .mat-expansion-panel-header-title,
+  .example-headers-align .mat-expansion-panel-header-description {
+    flex-basis: 0;
+  }
+  
+  .example-headers-align .mat-expansion-panel-header-description {
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .example-headers-align .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  
+  .cartItem{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    // justify-content: flex-start;
+    align-items: flex-start;
+    // border:2px solid red
+  }
+  .bookImage{
+    box-shadow: 2px 2px 5px gray;
+    height: 100%;
+     width: 90px;
+  }
+
+  .book-details{
+    padding: 0px 25px;
+    width: 100%;
+  }
+  .bookName{
+    font-size: 16px;
+    font-weight: 500;
+    color: #0A0102;
+    margin-bottom: 10px;
+  }
+  .author{
+    font-weight: 500;
+    color: #878787;
+    margin-bottom: 10px;
+  }
+  .discountPrice{
+    font-size: 15px;
+    font-weight: 500;
+    color: #0A0102;
+    margin-right: 10px;
+  }
+  .actualPrice{
+    color:grey;
+  }
+ 
+  .negativebutton {
+    background-color: white;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.negative {
+    color: lightgrey;
+    position: relative;
+    top: -10px;
+
+}
+.positivebutton {
+    background-color: white;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+
+}
+
+.positive {
+    color: grey;
+    position: relative;
+    top: -10px;
+
+}
+.remove {
+    margin-left: 15px;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+.type {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.home {
+    margin-left: 30px;
+
+}
+
+.work {
+    margin-left: 100px;
+
+}
+
+.other {
+    margin-left: 100px;
+
+}

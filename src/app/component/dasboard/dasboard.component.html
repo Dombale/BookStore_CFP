@@ -1,0 +1,50 @@
+<div class="container">
+    <mat-toolbar>
+        <div class="book" fxLayout="row">
+            <img class="book_img" src="../../../assets/education (1).svg">
+            <span class="text">Bookstore</span>
+        </div>
+        <div class="search">
+            <span matPrefix class="searchimg"> <img src="../../../assets/search_black.svg" width="25px" height="25px">
+            </span>
+            <input type="text" matInput placeholder="Search..." name="search" (keyup)="searchBook($event)" class="searchbox">
+        </div>
+        <div class="enditem" fxLayout="row" fxLayoutGap="55px">
+            <div class="enditems1" fxLayout="column" fxLayoutAlign="center center">
+                <button mat-icon-button [matMenuTriggerFor]="profile">
+                    <img src="../../../assets/person.svg" width="25px" height="25px">
+                </button>
+                <p class="profile1">Profile</p>
+            </div>
+            <mat-menu #profile="matMenu">
+                <span style="margin-left: 30px ; font-weight: bold;">Hello Priyanka,</span>
+                <button mat-menu-item>
+                    <img src="../../../assets/person-g.svg" style="margin: -5px 10px;" width="20px" height="20px">
+                    <span>Profile</span>
+                </button>
+                <button mat-menu-item>
+                    <img src="../../../assets/orders-gray.svg" style="margin: -5px 10px;" width="20px" height="20px">
+                    <span>My Orders</span>
+                </button>
+                <button mat-menu-item>
+                    <img src="../../../assets/wishlist-gray.svg" style="margin: -5px 10px;" width="20px" height="20px">
+                    <span  (click)="wishlist()" >My Wishlist </span>
+                </button>
+                <button mat-stroked-button class="logout" (click)="logout()">Logout
+                </button>
+            </mat-menu>
+
+            <div class="enditems" fxLayout="column" fxLayoutAlign="center center" matBadge={{itemcount}} matBadgeColor="warn">
+               <img src="../../../assets/cart.svg" width="25px" height="25px" (click)="cart()">
+                <p class="profile">Cart</p>
+            </div>
+        </div>
+    </mat-toolbar>
+    
+    <router-outlet></router-outlet>
+    <footer style="background-color: #2E1D1E ;padding: 10px;margin-top:348px;">
+        <p style="color: white;font-size: 12px;text-align: center;margin-left: 100px;margin-top: 3px;">Copyright ©
+            2020,
+            Bookstore Private Limited. All Rights Reserved</p>
+    </footer>
+</div>

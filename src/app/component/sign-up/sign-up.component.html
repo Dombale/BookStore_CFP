@@ -1,0 +1,49 @@
+<div class="main_container" fxLayoutAlign="center center" fxFlexFill>
+    <div class="container1" fxLayout="column" fxLayoutAlign="center center">
+        <img class="bookstore_img" src="../../../assets/book_store.png">
+        <h4 class="title">ONLINE BOOK SHOPPING</h4>
+    </div>
+    <div class="container2 ">
+        <div fxLayout="row" fxLayoutAlign="center center">
+            <div class="login" routerLink="/login">
+                <span>LOGIN</span>
+            </div>
+            <div class="signup" routerLink="/signup">
+                <span>SIGNUP</span>
+            </div>
+            <form [formGroup]="signupForm" (ngSubmit)="onsubmit()">
+                 <div class="content">
+                    <div>
+                        <mat-label>FullName</mat-label>
+                        <mat-form-field appearance="outline">
+                            <input type="text" formControlName="fullName" matInput placeholder="Enter your fullName">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-label>Email Id</mat-label>
+                        <mat-form-field appearance="outline">
+                            <input type="text" formControlName="email" matInput placeholder="Enter your Email">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-label>Passward</mat-label>
+                        <mat-form-field appearance="outline">
+                            <input type="text" formControlName="password" matInput placeholder="Enter your passward">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-label>Mobile No.</mat-label>
+                        <mat-form-field appearance="outline">
+                            <input type="text" formControlName="mobileNo" matInput placeholder="Enter your Mobile No.">
+                        </mat-form-field>
+                    </div>
+
+                    <button mat-raised-button type="submit"(click)="onsubmit()" class="btn-primary" color="primary">Signup</button>
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>

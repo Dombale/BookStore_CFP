@@ -1,0 +1,159 @@
+.start{
+    margin-left: 12%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.btn {
+    // padding-right: px;
+    min-width: 50px;
+    background-color: transparent;
+    //  border: 2px solid red;
+    color: #9D9D9D;
+    width: 150px;
+    position: relative;
+    bottom: 12px;
+    left: 110px;
+
+}
+
+
+.sideimages {
+    margin-bottom: 16%;
+    margin-right: 5px;
+    margin-bottom: 33%;
+
+}
+
+.side1 {
+    border: 1px solid rgb(165, 42, 42);
+    background-color: rgba(255, 192, 203, 0.562);
+    padding: 4px;
+}
+
+.img1 {
+    width: 40px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+.side2 {
+    border: 1px solid gainsboro;
+    padding: 4px;
+    margin-top: -10px;
+
+}
+
+.img2 {
+    width: 40px;
+    height: 50px;
+    padding-top: 3px;
+}
+
+.imageandbutton {
+
+    width: 280px;
+    height: 380px;
+    margin-bottom: 12%;
+    margin-left: -4px;
+
+}
+
+.big1 {
+    width: 280px;
+    height: 310px;
+    border: 1px solid gainsboro;
+}
+
+.image1 {
+
+    width: 210px;
+    height: 260px;
+    padding: 25px;
+    padding-left: 32px;
+}
+
+.cartandwishlistbutton {
+    margin-top: 20px;
+
+
+}
+
+.addtobag {
+    background: brown;
+    color: rgba(255, 255, 255, 0.767);
+    width: 125%;
+
+}
+
+.wishlist {
+    background: black;
+    color: rgba(255, 255, 255, 0.767);
+    width: 125%;
+
+}
+
+.bookdetailsdiv {
+    margin-left: 5%;
+    margin-bottom: 10%;
+    // margin-top: 5%;
+
+}
+
+.bookname {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.author {
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+
+.rating {
+    font-size: 10px;
+    background: green;
+    color: white;
+    height: 14px;
+    width: 35px;
+}
+
+.Star {
+    height: 11px;
+    width: 11px;
+    font-size: 10px;
+    margin-top: -1px;
+    // margin-left: 3px;
+}
+
+.quantity {
+    font-size: 10px;
+    margin-top: -18px;
+    margin-left: 37px;
+}
+
+.price {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.discountprice {
+    font-weight: 600;
+    font-size: medium;
+}
+
+.originalprice {
+    color: grey;
+    margin-left: 5px;
+}
+
+.bookdetail {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #8f8e8e
+}
+.para{
+    font-size: small;
+}
