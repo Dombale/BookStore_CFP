@@ -51,4 +51,13 @@ export class GetAllBooksComponent implements OnInit {
     this.bookService.userAddToWishList(book._id).subscribe((response: any) =>
       console.log(response, 'Books add to wishList successfully'))
   }
+  lowtohigh() {
+    this.BookList = this.BookList.sort((a: any, b: any) => a.price - b.price);
+  }
+  hightolow() {
+    this.BookList = this.BookList.sort((a: any, b: any) => b.price - a.price);
+  }
+  newestarrivals() {
+   
+  } 
 }

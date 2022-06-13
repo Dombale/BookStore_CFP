@@ -64,7 +64,7 @@
                     <div fxLayout="column" style="width: 45%;">
                         <mat-label>Mobile Number</mat-label>
                         <mat-form-field appearance="outline">
-                            <input matInput type="text" formControlName="MobileNo" placeholder="">
+                            <input matInput type="text" formControlName="phonenumber" placeholder="">
                         </mat-form-field>
                     </div>
                 </div>
@@ -130,7 +130,9 @@
             <mat-action-row *ngIf="step==2">
                 <button mat-flat-button color="primary" (click)="ordersummary()">CHECKOUT</button>
             </mat-action-row>
-
+<!-- <div>
+    <button mat-flat-button color="primary" (click)="total()">Total</button>
+</div> -->
         </mat-expansion-panel>
     </div>
 

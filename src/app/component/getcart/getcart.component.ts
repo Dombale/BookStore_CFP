@@ -26,7 +26,7 @@ export class GetcartComponent implements OnInit {
 
     this.orderForm = this.formbuilder.group({
       fullName: ['', Validators.required],
-      mobileNo: ['', Validators.required],
+      phonenumber: ['', Validators.required],
       address: ['', Validators.required],
       city: ['', Validators.required],
       state: ['', Validators.required],
@@ -89,6 +89,15 @@ export class GetcartComponent implements OnInit {
 
     this.router.navigateByUrl("/home/order-successfully")
   }
+
+  // total(){
+  //   this.total = this.orderList.reduce((a:any, b:any) => {
+  //     return a.product_price + b.product_price;
+  //   });
+    
+  //   console.log('The sum is: ', this.total);
+  // }
+
 
   step1() {
     this.step++;

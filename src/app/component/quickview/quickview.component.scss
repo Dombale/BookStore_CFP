@@ -2,6 +2,7 @@
     margin-left: 12%;
     margin-top: 2%;
     margin-bottom: 2%;
+    
 }
 .btn {
     // padding-right: px;
@@ -156,4 +157,13 @@
 }
 .para{
     font-size: small;
+}
+@media (max-width: 400px) {
+    .imageandbutton{
+    margin-left: 10%;
+   
+    }
+    .bookdetailsdiv{
+        margin-left: 10%;
+    }
 }

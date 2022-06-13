@@ -1,10 +1,13 @@
 .main_container {
     height: 100%;
-    width: 100%;
-    background-color: rgb(185, 185, 184);
+    width: 107%;
+    // background-color: rgb(185, 185, 184);
     // border:2px solid red
 }
 
+element.style{
+    width: 107%;
+}
 .container1 {
     display: flex;
     align-items: center;
@@ -104,4 +107,18 @@
     width: 100%;
     margin-left: 5px;
     background-color: #E4E4E4;
+}
+@media (max-width: 400px) {
+    .container2{
+    margin-left: 10%;
+    // height:100%;
+    margin-top: 7%;
+    width:100%
+    }
+    .login{
+        margin-top:-55px;
+    }
+    .signup{
+        margin-top:-55px; 
+    }
 }

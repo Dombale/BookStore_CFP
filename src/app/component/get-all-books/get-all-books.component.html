@@ -7,8 +7,8 @@
         <mat-form-field appearance="outline" class="sbr">
             <mat-label>Sort by relevence</mat-label>
             <mat-select>
-                <mat-option>Price -- Low to High</mat-option>
-                <mat-option>Price -- High to low</mat-option>
+                <mat-option (click)=" lowtohigh()">Price -- Low to High </mat-option>
+                <mat-option (click)=" hightolow()">Price -- High to low</mat-option>
                 <mat-option>newest First</mat-option>
             </mat-select>
         </mat-form-field>

@@ -1,14 +1,9 @@
-<!-- <div class="btn" fxLayout="row" fxLayoutAlign="start center" style="margin-left: 100px;margin-top: 30px;">
-    <button mat-button>Home</button>
-    <span>/Book(01)</span>
-</div> -->
-<!-- <span class="home" style="color:grey; cursor:pointer;" routerLink="/home">Home/  </span><span style="color: black; font-weight: 500;"> My Wishlist</span> -->
 <div class="start" fxLayout="row">
     <span class="home" style="color:grey; cursor:pointer;" routerLink="/home">Home/  </span><span style="color: black; font-weight: 500;"> Book (1)</span>
 </div>
-<div fxLayout="row" fxLayoutAlign="center start">
+<div fxLayout="row" fxLayoutAlign="center start" fxLayout.lt-lg="column">
 
-    <div class="sideimages" fxLayout="column" fxLayoutGap="10px"  width="50px"  height="60px">
+    <div class="sideimages" fxLayout="column" fxLayoutGap="10px"  width="50px"  height="60px" fxHide fxShow.gt-sm>
         <div class="side1">
             <img class="img1" src="../../../assets/book1.jpg" >
         </div>

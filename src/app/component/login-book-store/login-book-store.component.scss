@@ -1,7 +1,8 @@
 .main_container {
     height: 100%;
-    width: 100%;
-    background-color: rgb(185, 185, 184);
+    display: flex;
+    // background-color: rgb(185, 185, 184);
+    justify-content: center;
     // border:2px solid red
 }
 
@@ -113,3 +114,17 @@
     background-color: #E4E4E4;
 }
 
+@media (max-width: 400px) {
+    .container2{
+        margin-left: 10%;
+        // height:100%;
+        margin-top: 7%;
+        width:100%
+        }
+        .login{
+            margin-top:-55px;
+        }
+        .signup{
+            margin-top:-55px; 
+        }
+}

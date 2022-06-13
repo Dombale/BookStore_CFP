@@ -9,15 +9,19 @@ import { DataService } from 'src/app/service/data.service';
   styleUrls: ['./dasboard.component.scss']
 })
 export class DasboardComponent implements OnInit {
-  itemcount:any;
+  itemcount: any;
 
   constructor(private bookService: BookService, private router: Router, private dataservice: DataService) { }
 
   ngOnInit(): void {
-
+this. getcartitemcount(); 
   }
 
   cart() {
+    this.bookService.usergetcartlist().subscribe((response: any) => {
+      console.log(response.result);
+
+    })
     this.router.navigateByUrl("/home/getcart")
   }
   wishlist() {
@@ -30,5 +34,12 @@ export class DasboardComponent implements OnInit {
   searchBook(event: any) {
     console.log(event.target.value)// use for event/character binding
     this.dataservice.sendData(event.target.value)
+  }
+
+  getcartitemcount() {
+    this.bookService.usergetcartlist().subscribe((response: any) => {
+      console.log(response.result);
+      this.itemcount = response.result.length
+    })
   }
 }
