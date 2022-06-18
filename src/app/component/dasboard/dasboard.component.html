@@ -5,7 +5,7 @@
             <span class="text">Bookstore</span>
         </div>
         <div class="search">
-            <span matPrefix class="searchimg" fxFlex.xs.hide> <img src="../../../assets/search_black.svg" width="25px" height="25px">
+            <span matPrefix class="searchimg" fxHide fxShow.gt-sm> <img src="../../../assets/search_black.svg" width="25px" height="25px">
             </span>
             <input type="text" matInput placeholder="Search..." name="search" (keyup)="searchBook($event)"
                 class="searchbox">
@@ -13,9 +13,9 @@
         <div class="enditem" fxLayout="row" fxLayoutGap="55px">
             <div class="enditems1" fxLayout="column" fxLayoutAlign="center center">
                 <button mat-icon-button [matMenuTriggerFor]="profile">
-                    <img src="../../../assets/person.svg" width="25px" height="25px">
+                    <img class="profileimg" src="../../../assets/person.svg" width="25px" height="25px">
                 </button>
-                <p class="profile1">Profile</p>
+                <p class="profile1" fxHide fxShow.gt-sm>Profile</p>
             </div>
             <mat-menu #profile="matMenu">
                 <span style="margin-left: 30px ; font-weight: bold;">Hello Priyanka,</span>
@@ -38,14 +38,14 @@
             <button class="enditems" fxLayout="column" fxLayou tAlign="center center" matBadge={{itemcount}}
                 matBadgePosition="after"  matBadgeSize="small" matBadgeColor="warn" [matBadgeHidden]="itemcount==0">
                 <img  class="imgcart"  src="../../../assets/cart.svg" width="25px" height="25px" (click)="cart()">
-                <p class="profile">Cart</p>
+                <p class="profile" fxHide fxShow.gt-sm>Cart</p>
             </button>
         </div>
     </mat-toolbar>
 
     <router-outlet></router-outlet>
     <footer style="background-color: #2E1D1E ;padding: 10px;margin-top:348px;">
-        <p style="color: white;font-size: 12px;text-align: center;margin-left: 100px;margin-top: 3px;">Copyright ©
+        <p  class="footertext" style="color: white;font-size: 12px;text-align: center;margin-left: 100px;margin-top: 3px;">Copyright ©
             2020,
             Bookstore Private Limited. All Rights Reserved</p>
     </footer>

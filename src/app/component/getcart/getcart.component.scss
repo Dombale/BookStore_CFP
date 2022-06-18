@@ -118,3 +118,95 @@
     margin-left: 100px;
 
 }
+hr {
+  width: 108%;
+  margin-top: 30px;
+  margin-right: 4px;
+  // margin-left: 4px;
+  color: #0A0102;
+}
+@media (max-width: 400px) {
+  mat-panel-title{
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+  }
+  .details{
+    width: 100%;
+  }
+  mat-radio-group{
+    margin-top: 20px;
+  }
+  mat-radio-button{
+    font-size: 20px;
+  }
+  mat-label{
+    font-size: 25px;
+  }
+  .type {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+  .bookImage{
+     width: 180px;
+     margin-bottom: 55px;
+    //  border: 2px solid red;
+  }
+  hr {
+   margin-top: 90px;
+   width: 150%;
+  
+}
+  .book-details{
+    width: 50%;
+    // border: 2px solid red;
+  }
+    .bookname {
+      font-size: 30px;
+      margin-top: 10px;
+    }
+    .author {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+  .discountPrice{
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  .actualPrice{
+    font-size: 20px;
+    margin-top: 15px;
+  }
+ 
+  .negativebutton {
+    width: 40px;
+    height: 40px;
+}
+
+.negative {
+    color: rgb(81, 77, 77);
+    position: relative;
+    top: -5px;
+}
+
+.positivebutton {
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+
+}
+
+.positive {
+  color: rgb(81, 77, 77);
+  position: relative;
+  top: -5px
+}
+
+.remove {
+    margin-left: 35px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+}

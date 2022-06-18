@@ -1,11 +1,12 @@
 <div class="start" fxLayout="row">
-    <span class="home" style="color:grey; cursor:pointer;" routerLink="/home">Home/  </span><span style="color: black; font-weight: 500;"> Book (1)</span>
+    <span class="home" style="color:grey; cursor:pointer;" routerLink="/home">Home/ </span><span class="book"
+        style="color: black; font-weight: 500;"> Book (1)</span>
 </div>
 <div fxLayout="row" fxLayoutAlign="center start" fxLayout.lt-lg="column">
 
-    <div class="sideimages" fxLayout="column" fxLayoutGap="10px"  width="50px"  height="60px" fxHide fxShow.gt-sm>
+    <div class="sideimages" fxLayout="column" fxLayoutGap="10px" width="50px" height="60px" fxHide fxShow.gt-sm>
         <div class="side1">
-            <img class="img1" src="../../../assets/book1.jpg" >
+            <img class="img1" src="../../../assets/book1.jpg">
         </div>
         <div class="side2">
             <img class="img2" src="../../../assets/book.jpg">
@@ -22,12 +23,12 @@
 
         <div class="cartandwishlistbutton" fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="space-between center">
             <div>
-                <button mat-raised-button class="addtobag"  style="color:aliceblue" (click)="addToBag(book)">
+                <button mat-raised-button class="addtobag" style="color:aliceblue" (click)="addToBag(book)">
                     ADD TO BAG
                 </button>
             </div>
             <div fxLayout="row" fxLayoutAlign="start center">
-                <button mat-flat-button class="wishlist" style="color:aliceblue"(click)="addToWishList(book)">
+                <button mat-flat-button class="wishlist" style="color:aliceblue" (click)="addToWishList(book)">
                     <mat-icon class="wishlistIcon">favorite</mat-icon>
                     WISHLIST
                 </button>
@@ -39,32 +40,29 @@
         <div class="entirebook" fxLayout="column" fxLayout.sm="column">
 
             <div class="bookname">
-                {{book.bookName}}
-
+                {{book?.bookName}}
             </div>
             <div class="author">
-                by {{book.author}}
+                by {{book?.author}}
             </div>
             <div class="rating" fxLayoutAlign="space-evenly center">
                 4.5<img class="Star" src="../../../assets/star_rate.svg" alt="">
             </div>
             <div class="quantity">
-                ({{book.quantity}} items)
+                ({{book?.quantity}} items)
             </div>
 
             <div class="price" fxLayout="row" fxLayoutGap="10px">
                 <div class="discountprice">
-                    Rs.{{book.discountPrice}}
+                    Rs.{{book?.discountPrice}}
                 </div>
                 <div class="originalprice">
-                    <del> Rs.{{book.price}} </del>
+                    <del> Rs.{{book?.price}} </del>
                 </div>
             </div>
 
         </div>
-        <div class="line" style="color:gray">____________________________________________________________________________________________</div>
-
-
+        <hr>
         <div fxLayout="column" fxLayoutAlign="start start">
             <span class="bookdetail">Book Detail</span>
             <p class="para">
@@ -78,11 +76,8 @@
                 est laborum.
             </p>
         </div>
-
-        <div class="line" style="color:gray">____________________________________________________________________________________________</div>
-
+        <hr>
     </div>
-</div>
-<div>
-    <router-outlet></router-outlet>
-</div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>

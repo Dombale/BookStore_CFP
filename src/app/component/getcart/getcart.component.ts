@@ -90,13 +90,13 @@ export class GetcartComponent implements OnInit {
     this.router.navigateByUrl("/home/order-successfully")
   }
 
-  // total(){
-  //   this.total = this.orderList.reduce((a:any, b:any) => {
-  //     return a.product_price + b.product_price;
-  //   });
+  total(){
+    this.total = this.orderList.reduce((a:any, b:any) => {
+      return a.product_price + b.product_price;
+    });
     
-  //   console.log('The sum is: ', this.total);
-  // }
+    console.log('The sum is: ', this.total);
+  }
 
 
   step1() {

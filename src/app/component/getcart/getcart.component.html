@@ -2,12 +2,12 @@
     <!-- Cart Details -->
     <div class="example-headers-align">
         <mat-expansion-panel [expanded]="step === 0" hideToggle>
-            <mat-panel-title><b>My Cart({{cartcount}})</b></mat-panel-title>
+            <mat-panel-title>My Cart({{cartcount}})</mat-panel-title>
             <mat-expansion-panel-header #panelH (click)="panelH._toggle()">
                 <mat-panel-description>
                     <mat-form-field appearance="outline" style="margin-bottom: -15px;">
                         <!-- <mat-icon class="placeIcon" style="margin-left: -18px;margin-top: -5px;">place</mat-icon> -->
-                        <mat-label style="font-size: 13px;">Bridgelabz Solution LLP</mat-label>
+                        <mat-label class="location" style="font-size: 13px;">Bridgelabz Solution LLP</mat-label>
                         <mat-select>
                             <mat-option>Bridgelabz Solution LLP</mat-option>
                         </mat-select>
@@ -20,8 +20,9 @@
                 <div>
                     <img class="bookImage" src="../../../assets/book.jpg">
                 </div>
+
                 <div class="book-details" fxLayout="column" fxLayoutAlign="start start">
-                    {{book.product_id.bookName}}
+                    <span class="bookname">{{book.product_id.bookName}}</span>
                     <span class="author"> by {{book.product_id.author}}</span>
                     <div fxLayout="row" fxLayout.lt-sm="column" style="margin-bottom: 10px;">
                         <div><span class="discountPrice">Rs.{{book.product_id.discountPrice}}</span></div>
@@ -37,8 +38,11 @@
                         </button>
                         <span class="remove" (click)="removecartitem(book)">Remove</span>
                     </div>
+                    <hr>
                 </div>
+
             </div>
+
             <mat-action-row *ngIf="step==0">
                 <button mat-flat-button color="primary" (click)="step1()">Place Order</button>
             </mat-action-row>
@@ -54,7 +58,7 @@
                 </mat-panel-description>
             </mat-expansion-panel-header>
             <form [formGroup]="orderForm">
-                <div fxLayout=" row" fxLayoutAlign="space-between center">
+                <div class="details" fxLayout=" row" fxLayoutAlign="space-between center">
                     <div fxLayout="column" style="width: 45%;">
                         <mat-label>Full Name</mat-label>
                         <mat-form-field appearance="outline">
@@ -71,8 +75,8 @@
                 <div class="address">
 
                     <mat-label>Address</mat-label>
-                    <button mat-flat-button style="color:#A03037; margin-left: 20px;"
-                        (click)="editAddress()">Edit</button>
+                    <!-- <button mat-flat-button style="color:#A03037; margin-left: 20px;"
+                        (click)="editAddress()">Edit</button> -->
                     <mat-form-field appearance="outline" style="width: 100%;">
                         <input matInput type="text" formControlName="address" placeholder="">
                     </mat-form-field>
@@ -118,7 +122,7 @@
                     <img class="bookImage" src="../../../assets/book.jpg">
                 </div>
                 <div class="book-details" fxLayout="column" fxLayoutAlign="start start">
-                    {{book.product_id.bookName}}
+                    <span class="bookname">{{book.product_id.bookName}}</span>
                     <span class="author"> by {{book.product_id.author}}</span>
                     <div fxLayout="row" fxLayout.lt-sm="column" style="margin-bottom: 10px;">
                         <div><span class="discountPrice">Rs.{{book.product_id.discountPrice}}</span></div>
@@ -130,7 +134,7 @@
             <mat-action-row *ngIf="step==2">
                 <button mat-flat-button color="primary" (click)="ordersummary()">CHECKOUT</button>
             </mat-action-row>
-<!-- <div>
+            <!-- <div>
     <button mat-flat-button color="primary" (click)="total()">Total</button>
 </div> -->
         </mat-expansion-panel>

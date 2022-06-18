@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { BookService } from 'src/app/service/book.service';
 import { Router } from '@angular/router';
 import { DataService } from 'src/app/service/data.service';
@@ -10,7 +10,7 @@ import { DataService } from 'src/app/service/data.service';
 })
 export class DasboardComponent implements OnInit {
   itemcount: any;
-
+  // @Output() messageEvent = new EventEmitter<string>();
   constructor(private bookService: BookService, private router: Router, private dataservice: DataService) { }
 
   ngOnInit(): void {
@@ -38,8 +38,10 @@ this. getcartitemcount();
 
   getcartitemcount() {
     this.bookService.usergetcartlist().subscribe((response: any) => {
-      console.log(response.result);
+      // console.log(response.result);
       this.itemcount = response.result.length
+      // this.messageEvent.emit(response.result.length)
+      // console.log("messageEvent", this.messageEvent)
     })
   }
 }

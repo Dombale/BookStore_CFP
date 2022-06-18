@@ -45,6 +45,8 @@ export class GetAllBooksComponent implements OnInit {
     this.bookService.userAddToBag(book._id).subscribe((response: any) => {
       console.log(response, 'Books add to bag successfully');
       // console.log("productID", book._id);
+      // this.messageEvent.emit(response)
+      // console.log("messageEvent", this.messageEvent)
     })
   }
   addToWishList(book: any) {
@@ -60,4 +62,8 @@ export class GetAllBooksComponent implements OnInit {
   newestarrivals() {
    
   } 
+  // receiveMessage($event:any){
+  //   this.getAllBook();
+  //   console.log($event)
+  // }
 }
