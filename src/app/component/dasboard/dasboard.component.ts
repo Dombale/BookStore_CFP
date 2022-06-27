@@ -40,8 +40,7 @@ this. getcartitemcount();
     this.bookService.usergetcartlist().subscribe((response: any) => {
       // console.log(response.result);
       this.itemcount = response.result.length
-      // this.messageEvent.emit(response.result.length)
-      // console.log("messageEvent", this.messageEvent)
+    
     })
   }
 }

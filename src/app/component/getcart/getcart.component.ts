@@ -18,6 +18,7 @@ export class GetcartComponent implements OnInit {
   step = 0;
   orderForm!: FormGroup;
   submitted = false;
+  booksPriceTotal=0;
 
   constructor(private bookService: BookService, private formbuilder: FormBuilder, private userdata: UserService, private router: Router) { }
 
@@ -39,6 +40,12 @@ export class GetcartComponent implements OnInit {
       console.log(response);
       this.cartcount = response.result.length
       this.cartbooks = response.result;
+
+
+      response.result.forEach((element: any) => {
+        this.booksPriceTotal+=element.product_id.discountPrice;
+        });
+        console.log(this.booksPriceTotal);
 
     })
   }
@@ -90,13 +97,7 @@ export class GetcartComponent implements OnInit {
     this.router.navigateByUrl("/home/order-successfully")
   }
 
-  total(){
-    this.total = this.orderList.reduce((a:any, b:any) => {
-      return a.product_price + b.product_price;
-    });
-    
-    console.log('The sum is: ', this.total);
-  }
+ 
 
 
   step1() {

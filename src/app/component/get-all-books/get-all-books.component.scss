@@ -1,7 +1,7 @@
 .bookHead {
   align-items: center;
   margin-left: 80px;
-  margin-bottom: 10px;
+  margin-top: 100px;
 }
 .firstline{
   margin-top: -80px;
@@ -13,7 +13,7 @@
 }
 
 .sbr {
-  margin-top: 30px;
+  margin-top: 130px;
   // margin-left: 500px;
   margin-right: 20px
 }
@@ -74,7 +74,6 @@
   margin-top: -1px;
   // margin-left: 3px;
 }
-
 .quantity {
   font-size: 10px;
   margin-top: -18px;
@@ -112,32 +111,38 @@
 
 }
 
-.paging {
-  margin-top: 10%;
-}
+// .paging {
+//   margin-top: 10%;
+// }
 
 .my-pagination ::ng-deep .ngx-pagination .current {
   background: brown;
   border-radius: 50%;
+  // position: fixed;
+  margin-top: 80%;
+  margin-left: -20px;
 }
 
 @media (max-width: 400px) {
   .Count {
-    font-size: 25px;
+    font-size: 25px; 
+    // margin-top: 50px;
   }
+
 
   .books {
     font-size: 35px;
+    // margin-top: 120px;
   }
 
   .sbr {
     font-size: 25px;
-    margin-top: 180px;
-    margin-right: 250px;
+    // margin-top: 120px;
+    // margin-right:13 50px;
   }
 
   .book {
-    width: 350px;
+    width: 400px;
     height: 580px;
     margin: 5%;
     margin-left: 20px;
@@ -145,7 +150,8 @@
 
   .img1 {
     width: 230px;
-    height: 250px;
+    height: 270px;
+    margin-left:22%;
   }
 
   .bookname {
@@ -177,9 +183,9 @@
   }
 
   .price {
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 15px;
-    margin-bottom: 10%;
+    // margin-bottom: 10%;
     margin-top: 15px;
   }
 
@@ -192,15 +198,33 @@
   }
 
   .addtobag {
-    margin-left: 15px;
-    width: 140px;
-    font-size: 15px;
+    margin-left: 25px;
+    width: 160px;
+    font-size: 20px;
+    height: 50px;
+    // border: 2px solid black;
   }
 
   .wishlist {
-    margin-left: 190px;
-    width: 140px;
-    font-size: 15px;
+    margin-left: 210px;
+    width: 160px;
+    font-size: 20px;
+    height: 50px;
+    margin-top: -50px;
   }
 
+}
+
+@media (max-width: 850px) {
+  .book {
+    // width: 400px;
+    // height: 580px;
+    margin: 5%;
+    margin-left: 10px;
+  }
+  .sbr {
+    font-size: 25px;
+    // margin-top: 120px;
+    // margin-right:13 50px;
+  }
 }

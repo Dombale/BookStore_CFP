@@ -287,3 +287,127 @@ hr {
         font-size: 20px;
     }
 }
+@media (max-width: 850px) {
+    .home {
+        font-size: 30px;
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+
+    .book {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .imageandbutton {
+        margin-left: 25%;
+        margin-top: 5%;
+        width: 350px;
+        height: 400px;
+    }
+
+    .big1 {
+        width: 480px;
+        height: 580px;
+        border: 1px solid gainsboro
+    }
+
+    .bookname {
+        font-size: 50px;
+        margin-top: 150px;
+    }
+
+    .image1 {
+
+        width: 370px;
+        height: 450px;
+
+    }
+
+    .author {
+        font-size: 35px;
+        margin-top: 18px;
+    }
+
+    .rating {
+        font-size: 30px;
+        margin-top: 15px;
+        height: 45px;
+        width: 75px;
+    }
+
+    .Star {
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+    }
+
+    .quantity {
+        font-size: 20px;
+        margin-left: 85px;
+    }
+
+    .price {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-bottom: 10%;
+        margin-top: 15px;
+    }
+
+    .discountprice {
+        font-weight: 600;
+        font-size: 40px;
+        margin-left: -10px;
+        margin-top: 15px;
+    }
+
+    .originalprice {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    .bookdetailsdiv {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .bookdetail {
+        font-size: 50px;
+        margin-bottom: 35px;
+        margin-top: 20px;
+    }
+
+    .para {
+        font-size: 35px;
+        line-height: 48px;
+        /* within paragraph */
+        margin-bottom: 35px;
+        /* between paragraphs */
+        margin-top: 10px;
+    }
+
+    hr {
+        width: 98%;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    .cartandwishlistbutton {
+        margin-top: -80px;
+    }
+
+    .addtobag {
+        margin-left: 30px;
+        height: 50px;
+        font-size: 20px;
+        width:100%
+
+    }
+
+    .wishlist {
+        margin-left: 40px;
+        height: 50px;
+        font-size: 20px;
+        width:130%
+    }
+}

@@ -1,9 +1,10 @@
-.start{
+.start {
     margin-left: 16%;
     margin-top: 2%;
 }
+
 .wishlist {
-    background-color:rgb(228, 227, 227);
+    background-color: rgb(228, 227, 227);
     border: 1px gainsboro;
     height: 50px;
     width: 65%;
@@ -11,7 +12,6 @@
     font-weight: 500;
     font-size: 20px;
     margin-left: 16%
-
 }
 
 .book {
@@ -97,57 +97,79 @@
     top: 200px;
     margin-left: 50px;
 }
-.deleteimg{
-    display: flex;
-    justify-content: flex-end;
+
+.deleteimg {
+    // display: flex;
+    margin-top: -55px;
+    margin-right: 25px;
+    // justify-content: flex-end;
 }
+
+@media (max-width: 850px) {
+    .deleteimg {
+        height: 35px;
+        width: 35px;
+        margin-left: -150px;
+
+    }
+
+}
+
 @media (max-width: 400px) {
     .book {
-    width:75%
+        width: 75%
     }
+
     .wishlist {
-        width:75%
+        width: 75%
     }
-    
-}
-@media (max-width: 400px) {
     .home {
         font-size: 30px;
         margin-top: 10px;
     }
-    .mywishlisttxt{
+
+    .mywishlisttxt {
         font-size: 30px;
         margin-top: 10px;
     }
-    .bookImage{
+
+    .bookImage {
         width: 180px;
-        height: 250px;
-     margin-top: 55px; 
-     
+        height: 200px;
+        margin-top: 55px;
+
     }
+
     .bookname {
         font-size: 30px;
         margin-top: 10px;
-      }
-      .author {
+    }
+
+    .author {
         font-size: 20px;
         margin-top: 15px;
-      }
-    .discountPrice{
-      font-size: 25px;
-      margin-top: 15px;
     }
-    .actualPrice{
-      font-size: 20px;
-      margin-top: 15px;
+
+    .discountPrice {
+        font-size: 25px;
+        margin-top: 15px;
     }
-    .entirebook{
-        margin-top: -100px;
+
+    .actualPrice {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .entirebook {
+        margin-top: -60px;
         // border: 2px solid red;
-      }
-      .deleteimg{
+    }
+
+    .deleteimg {
         height: 35px;
         width: 35px;
-        margin-top: -220px;
-      }
+        margin-left: -20px;
+
+    }
 }
+

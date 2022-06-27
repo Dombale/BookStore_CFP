@@ -1,6 +1,6 @@
 <div class="layout">
-    <div  class="firstline" fxLayout="row" fxLayoutAlign="space-between center">
-        <div fxLayout="row" fxLayoutAlign="start center" class="bookHead">
+    <div class="firstline" fxLayout="row" fxLayoutAlign="space-between center" >
+        <div fxLayout="row" fxLayoutAlign="start center" class="bookHead" >
             <span style="font-size: 22px; font-weight: 500;" class="books">Books</span>
             <span class="Count">({{BookList.length}} items)</span>
         </div>
@@ -13,7 +13,7 @@
             </mat-select>
         </mat-form-field>
     </div>
-    <div fxLayoutAlign="center center" fxLayout="row wrap" fxLayoutGap="15px">
+    <div class="entireBook" fxLayoutAlign="center center" fxLayout="row wrap" fxLayoutGap="15px">
         <div class="book" *ngFor='let book of BookList |
          filter:filterString |
           paginate: { itemsPerPage: 8, currentPage: page, totalItems:totalLength}'>
@@ -54,12 +54,8 @@
             </div>
 
         </div>
-        <div fxLayoutAlign="center center">
-            <pagination-controls class="paging my-pagination" (pageChange)="page = $event"></pagination-controls>
-        </div>
-       
-        <div>
-            <router-outlet></router-outlet>
-            
-        </div>
-        <!-- <app-dasboard (messageEvent)="receiveMessage($event)"></app-dasboard> -->
+    </div>
+    <div fxLayoutAlign="center center">
+        <pagination-controls class="my-pagination" (pageChange)="page = $event"></pagination-controls>
+    </div>
+</div>

@@ -2,12 +2,12 @@
     <!-- Cart Details -->
     <div class="example-headers-align">
         <mat-expansion-panel [expanded]="step === 0" hideToggle>
-            <mat-panel-title>My Cart({{cartcount}})</mat-panel-title>
-            <mat-expansion-panel-header #panelH (click)="panelH._toggle()">
+            <mat-panel-title class="mycart">My Cart({{cartcount}})</mat-panel-title>
+            <mat-expansion-panel-header>
                 <mat-panel-description>
                     <mat-form-field appearance="outline" style="margin-bottom: -15px;">
                         <!-- <mat-icon class="placeIcon" style="margin-left: -18px;margin-top: -5px;">place</mat-icon> -->
-                        <mat-label class="location" style="font-size: 13px;">Bridgelabz Solution LLP</mat-label>
+                        <mat-label class="location">Bridgelabz Solution LLP</mat-label>
                         <mat-select>
                             <mat-option>Bridgelabz Solution LLP</mat-option>
                         </mat-select>
@@ -18,7 +18,7 @@
             <span *ngIf="cartbooks.length==0" fxLayoutAlign="center center">Cart is Empty</span>
             <div class="cartItem" *ngFor="let book of cartbooks">
                 <div>
-                    <img class="bookImage" src="../../../assets/book.jpg">
+                    <img class="bookImage" src="../../../assets/book1.jpg">
                 </div>
 
                 <div class="book-details" fxLayout="column" fxLayoutAlign="start start">
@@ -44,28 +44,28 @@
             </div>
 
             <mat-action-row *ngIf="step==0">
-                <button mat-flat-button color="primary" (click)="step1()">Place Order</button>
+                <button class="primarybtn" mat-flat-button color="primary" (click)="step1()">Place Order</button>
             </mat-action-row>
         </mat-expansion-panel><br>
 
         <!-- Customer Details  -->
         <mat-expansion-panel [expanded]="step === 1" hideToggle>
             <mat-expansion-panel-header #panelH1 (click)="panelH1._toggle()">
-                <mat-panel-title><b>Customer Details</b></mat-panel-title>
+                <mat-panel-title class="cstmrdetl"><b>Customer Details</b></mat-panel-title>
                 <mat-panel-description>
                     <button mat-stroked-button *ngIf="step==1" style="color:#A03037; border:1px solid #A03037;">Add New
                         Address</button>
                 </mat-panel-description>
             </mat-expansion-panel-header>
-            <form [formGroup]="orderForm">
-                <div class="details" fxLayout=" row" fxLayoutAlign="space-between center">
-                    <div fxLayout="column" style="width: 45%;">
+            <form [formGroup]="orderForm" style="margin-top: 10%">
+                <div class="details" fxLayout=" row" fxLayoutAlign="space-between center" fxLayout.lt-xs="column">
+                    <div class="detailed" fxLayout="column" >
                         <mat-label>Full Name</mat-label>
                         <mat-form-field appearance="outline">
                             <input matInput type="text" formControlName="fullName" placeholder="">
                         </mat-form-field>
                     </div>
-                    <div fxLayout="column" style="width: 45%;">
+                    <div class="detailed" fxLayout="column" >
                         <mat-label>Mobile Number</mat-label>
                         <mat-form-field appearance="outline">
                             <input matInput type="text" formControlName="phonenumber" placeholder="">
@@ -74,7 +74,7 @@
                 </div>
                 <div class="address">
 
-                    <mat-label>Address</mat-label>
+                    <mat-label>Address</mat-label> 
                     <!-- <button mat-flat-button style="color:#A03037; margin-left: 20px;"
                         (click)="editAddress()">Edit</button> -->
                     <mat-form-field appearance="outline" style="width: 100%;">
@@ -82,21 +82,21 @@
                     </mat-form-field>
 
                 </div>
-                <div fxLayout=" row" fxLayoutAlign="space-between center">
-                    <div fxLayout="column" style="width: 45%;">
+                <div fxLayout=" row" fxLayoutAlign="space-between center" fxLayout.lt-xs="column">
+                    <div class="detailed"  fxLayout="column">
                         <mat-label>City</mat-label>
                         <mat-form-field appearance="outline">
                             <input matInput type="text" formControlName="city" placeholder="">
                         </mat-form-field>
                     </div>
-                    <div fxLayout="column" style="width: 45%;">
+                    <div class="detailed" fxLayout="column">
                         <mat-label>State</mat-label>
                         <mat-form-field appearance="outline">
                             <input matInput type="text" formControlName="state" placeholder="">
                         </mat-form-field>
                     </div>
                 </div>
-                <div fxLayout="column" fxLayoutGap="7px">
+                <div  fxLayout="column" fxLayoutGap="7px">
                     <span class="type">Type</span>
                     <mat-radio-group aria-label="Select an option">
                         <mat-radio-button class="home" value="1">HOME</mat-radio-button>
@@ -104,22 +104,23 @@
                         <mat-radio-button class="other" value="3">OTHER</mat-radio-button>
                     </mat-radio-group>
                 </div>
-                <mat-action-row>
-                    <button mat-stroked-button (click)="step0()">Previous</button>
-                    <button mat-flat-button color="primary" type="submit" (click)="step2()">Continue</button>
-                </mat-action-row>
+                <div class="endbtn" fxLayoutGap="10px" fxLayout.lt-lg="row">
+                    <button class="prevbtn" mat-stroked-button (click)="step0()">Previous</button>
+                    <button class="primarybtn" mat-flat-button color="primary" type="submit"
+                        (click)="step2()">Continue</button>
+                </div>
             </form>
         </mat-expansion-panel><br>
 
         <!-- Order Summary -->
         <mat-expansion-panel [expanded]="step === 2" hideToggle>
-            <mat-expansion-panel-header #panelH2 (click)="panelH2._toggle()">
-                <mat-panel-title><b>Order Summary</b></mat-panel-title>
+            <mat-expansion-panel-header >
+                <mat-panel-title class="cstmrdetl"><b>Order Summary</b></mat-panel-title>
 
             </mat-expansion-panel-header>
             <div class="cartItem" *ngFor="let book of cartbooks">
                 <div>
-                    <img class="bookImage" src="../../../assets/book.jpg">
+                    <img class="bookImage" src="../../../assets/book1.jpg">
                 </div>
                 <div class="book-details" fxLayout="column" fxLayoutAlign="start start">
                     <span class="bookname">{{book.product_id.bookName}}</span>
@@ -132,11 +133,12 @@
                 </div>
             </div>
             <mat-action-row *ngIf="step==2">
+                <button class="prevbtn" mat-stroked-button (click)="step0()">Previous</button>
                 <button mat-flat-button color="primary" (click)="ordersummary()">CHECKOUT</button>
             </mat-action-row>
-            <!-- <div>
-    <button mat-flat-button color="primary" (click)="total()">Total</button>
-</div> -->
+            <div class="total"> 
+                Total:{{booksPriceTotal}}/-
+            </div>
         </mat-expansion-panel>
     </div>
 

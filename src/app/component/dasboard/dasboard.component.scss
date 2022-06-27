@@ -104,6 +104,10 @@ mat-toolbar {
 
 }
 
+.footertext {
+    font-size: 12px;
+}
+
 // .mat-toolbar-row, .mat-toolbar-single-row {
 //     width:200%;
 // }
@@ -117,9 +121,11 @@ mat-toolbar {
         margin-right: 30px;
         // font-size: larger;
     }
-.footertext{
-    font-size: 30px;
-}
+
+    .footertext {
+        font-size: 20px;
+    }
+
     .searchbox {
         margin-left: 50px;
     }
@@ -148,5 +154,25 @@ mat-toolbar {
     .book_img {
         height: 45px;
         width: 45px
+    }
+}
+
+@media (max-width: 850px) {
+    .searchbox {
+        margin-left: 80px;
+    }
+    .enditems {
+        margin-right: 50px;
+        // font-size: larger;
+    }
+    .imgcart {
+        height: 35px;
+        width: 35px;
+        margin-bottom: 30px;
+    }
+    .profileimg {
+        height: 38px;
+        width: 38px;
+        margin-bottom: 10px;
     }
 }
