@@ -3,6 +3,10 @@
   margin-left: 80px;
   margin-top: 100px;
 }
+
+.books{
+  font-size: 22px
+}
 .firstline{
   margin-top: -80px;
 }
@@ -215,16 +219,89 @@
 
 }
 
-@media (max-width: 850px) {
-  .book {
-    // width: 400px;
-    // height: 580px;
-    margin: 5%;
-    margin-left: 10px;
-  }
-  .sbr {
-    font-size: 25px;
-    // margin-top: 120px;
-    // margin-right:13 50px;
-  }
-}
+// @media (min-width:410px) and (max-width: 850px) {
+ 
+//   .sbr {
+//     font-size: 25px;
+//     // margin-top: 120px;
+//     margin-right:50px;
+//   }
+//   .book {
+//     width: 400px;
+//     height: 605px;
+//     margin: 5%;
+//     margin-left: 20px;
+//   }
+
+//   .img1 {
+//     width: 230px;
+//     height: 270px;
+//     margin-left:22%;
+//   }
+
+//   .bookname {
+//     font-size: 30px;
+//     margin-top: 20px;
+//   }
+
+//   .author {
+//     font-size: 20px;
+//     margin-top: 15px;
+//   }
+
+//   .rating {
+//     font-size: 20px;
+//     margin-top: 15px;
+//     height: 35px;
+//     width: 65px;
+//   }
+
+//   .Star {
+//     height: 20px;
+//     width: 20px;
+//     font-size: 20px;
+//   }
+
+//   .quantity {
+//     font-size: 20px;
+//     margin-left: 85px;
+//   }
+
+//   .price {
+//     font-size: 25px;
+//     margin-left: 15px;
+//     // margin-bottom: 10%;
+//     margin-top: 15px;
+//   }
+
+//   .discountprice {
+//     font-weight: 600;
+//   }
+
+//   .originalprice {
+//     margin-left: 15px;
+//   }
+
+//   .addtobag {
+//     margin-left: 25px;
+//     width: 160px;
+//     font-size: 20px;
+//     height: 50px;
+//     // border: 2px solid black;
+//   }
+
+//   .wishlist {
+//     margin-left: 210px;
+//     width: 160px;
+//     font-size: 20px;
+//     height: 50px;
+//     margin-top: -50px;
+//   }
+//   .books{
+//     font-size: 28px
+//   }
+//   .Count {
+//     font-size: 20px;
+//   }
+
+// }

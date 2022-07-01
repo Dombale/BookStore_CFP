@@ -116,12 +116,13 @@
 }
 
 @media (max-width: 400px) {
-    .container2{
-        margin-left: 10%;
-        // height:100%;
+    .container2 {
+        margin-left:16%;
         margin-top: 7%;
-        width:100%
-        }
+        width: 104%;
+        height: 70%;
+        // border:2px solid red
+    }
         .login{
             margin-top:-55px;
             left:0px
@@ -298,7 +299,7 @@
 //             }
 // }
 
-// @media (max-width: 850px) {
+// @media (min-width:410px) and (max-width: 850px) {
 //     .container2 {
 //         width: 68%;
 //         height: 70%;

@@ -113,30 +113,33 @@
     background-color: #E4E4E4;
 }
 
-mat-label {}
+mat-label {
+
+}
 
 @media (max-width: 400px) {
     .container2 {
-        margin-left: 10%;
+        margin-left:0%;
         // height:100%;
         margin-top: 7%;
-        width: 100%
+        width: 115%;
+        border:2px solid red
     }
 
     .mat-form-field {
         margin-top: 5px;
-        width: 380px;
+        width: 130%;
         font-size: 15px;
     }
 
     .login {
-        margin-top: -55px;
-        left: 0px;
+        margin-top: -58px;
+        left: 30px;
     }
 
     .signup {
         margin-top: -55px;
-        left: 230px;
+        left: 180px;
     }
 
     mat-label {
@@ -146,7 +149,7 @@ mat-label {}
 
 }
 
-// @media (max-width: 850px) {
+// @media (min-width:410px) and (max-width: 900px) {
 //     .container2 {
 //         width: 48%
 //     }
@@ -171,5 +174,5 @@ mat-label {}
 //         margin-top:15px;
 //         font-size: 17px;
 //     }
-
+   
 // }

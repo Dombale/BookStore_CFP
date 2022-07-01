@@ -32,6 +32,7 @@ import { GetcartComponent } from './component/getcart/getcart.component';
 import { OrderSuccessfullyComponent } from './component/order-successfully/order-successfully.component';
 import { WishlistComponent } from './component/wishlist/wishlist.component';
 import { FilterPipe } from './pipe/filter.pipe';
+import { environment } from '../environments/environment';
 
 
 
@@ -71,7 +72,8 @@ import { FilterPipe } from './pipe/filter.pipe';
     MatExpansionModule,
     MatRadioModule,
     NgxPaginationModule,
-    MatBadgeModule
+    MatBadgeModule,
+
   ],
 
 

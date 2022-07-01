@@ -249,11 +249,11 @@ hr {
   margin-left: -3%;
   }
 }
-@media (max-width: 850px) {
-  mat-label{
-    font-size: 15px;
-  }
-  .layout{
-    margin-left: -25px;
-  }
-}
+// @media (min-width:410px) and (max-width: 850px){
+//   mat-label{
+//     font-size: 15px;
+//   }
+//   .layout{
+//     margin-left: -25px;
+//   }
+// }

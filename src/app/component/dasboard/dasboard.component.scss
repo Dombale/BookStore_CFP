@@ -112,6 +112,51 @@ mat-toolbar {
 //     width:200%;
 // }
 
+// @media (min-width:410px) and (max-width: 850px){
+//     .searchbox {
+//         margin-left: 80px;
+//     }
+//     .enditems {
+//         margin-right: 50px;
+//         // font-size: larger;
+//     }
+//     .imgcart {
+//         height: 35px;
+//         width: 35px;
+//         margin-bottom: 30px;
+//     }
+//     .profileimg {
+//         height: 38px;
+//         width: 38px;
+//         margin-bottom: 10px;
+//     }
+//     .container {
+//         width: 850px
+//     }
+
+//     .enditems {
+//         margin-right: 30px;
+//         // font-size: larger;
+//     }
+
+//     .footertext {
+//         font-size: 20px;
+//     }
+
+//     .searchbox {
+//         margin-left: 50px;
+//     }
+
+//     .text {
+//         font-size: 30px;
+//         margin-top: 12px;
+//     }
+//     .book_img{
+//         height: 55px;
+//         width:55px;
+//     }
+// }
+
 @media (max-width: 400px) {
     .container {
         width: 850px
@@ -157,22 +202,3 @@ mat-toolbar {
     }
 }
 
-@media (max-width: 850px) {
-    .searchbox {
-        margin-left: 80px;
-    }
-    .enditems {
-        margin-right: 50px;
-        // font-size: larger;
-    }
-    .imgcart {
-        height: 35px;
-        width: 35px;
-        margin-bottom: 30px;
-    }
-    .profileimg {
-        height: 38px;
-        width: 38px;
-        margin-bottom: 10px;
-    }
-}
