@@ -1,4 +1,9 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { FilterPipe } from 'src/app/pipe/filter.pipe';
+
 
 import { GetAllBooksComponent } from './get-all-books.component';
 
@@ -8,7 +13,8 @@ describe('GetAllBooksComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GetAllBooksComponent ]
+      declarations: [ GetAllBooksComponent,FilterPipe],
+      imports:[HttpClientTestingModule,RouterTestingModule,NgxPaginationModule]
     })
     .compileComponents();
   });
